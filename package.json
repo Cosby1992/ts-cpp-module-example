@@ -1,5 +1,5 @@
 {
-  "name": "my-native-cpp-module",
+  "name": "@cosby/native-basic-math",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
