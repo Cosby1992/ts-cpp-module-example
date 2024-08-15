@@ -1,8 +1,8 @@
 {
     "targets": [
         {
-            "target_name": "sum",
-            "sources": ["src/sum.cpp"],
+            "target_name": "basic-math",
+            "sources": ["src/basic-math/basic-math.cpp"],
             "dependencies": [
                 "<!(node -p \"require('node-addon-api').targets\"):node_addon_api",
             ],
