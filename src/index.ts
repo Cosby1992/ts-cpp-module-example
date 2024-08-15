@@ -1,4 +1,8 @@
-const basicMathModule = require('../build/Release/basic-math.node');
+const nativeModulePath = process.env.NODE_ENV === 'test' ?
+  '../build/Release/basic-math.node'
+  : '../../build/Release/basic-math.node';
+
+const basicMathModule = require(nativeModulePath);
 
 export function sum(a: number, b: number): number {
   return basicMathModule.sum(a, b);
