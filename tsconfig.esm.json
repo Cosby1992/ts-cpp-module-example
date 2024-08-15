@@ -1,0 +1,9 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "module": "esnext",                                  /* Switch to ES module output. */
+      "outDir": "./dist/esm",                              /* Output directory for ES module files. */
+      "declarationDir": "./dist/types",                    /* Reuse the same directory for type declarations. */
+      "emitDeclarationOnly": false,                        /* Ensure JS files are emitted alongside .d.ts files. */
+    }
+  }
