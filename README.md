@@ -1,5 +1,7 @@
 # Native Basic Math
-This is an example Native Module for Typescript/Javascript implmented in C++
+
+This project is an example of a Native Node.js module implemented in C++ with TypeScript/JavaScript bindings. It provides basic arithmetic operations such as addition and subtraction, serving as a foundation for learning or building more complex native modules.
+
 
 ## Installation
 ### Using NPM
@@ -56,12 +58,13 @@ console.log(math.div(10, 2)); // Output: 5
 ```
 
 ## API
-| Function                              | Description                                                                        |
-|---------------------------------------|------------------------------------------------------------------------------------|
-| `sum(a: number, b: number): number`   | Returns the sum of `a` and `b`.                                                    |
-| `sub(a: number, b: number): number`   | Returns the difference when `b` is subtracted from `a`.                            |
-| `mul(a: number, b: number): number`   | Returns the product of `a` and `b`.                                                |
-| `div(a: number, b: number): number`   | Returns the quotient when `a` is divided by `b`. Throws an error if `b` is 0.      |
+| Function                              | Description                                                           |
+|----------------------------------------|----------------------------------------------------------------------|
+| `sum(a: number, b: number): number`   | Returns the sum of `a` and `b`.                                       |
+| `sub(a: number, b: number): number`   | Returns the difference when `b` is subtracted from `a`.               |
+| `mul(a: number, b: number): number`   | *Not yet implemented.* Intended to return the product of `a` and `b`. |
+| `div(a: number, b: number): number`   | *Not yet implemented.* Intended to return the quotient when `a` is divided by `b`. Throws an error if `b` is 0. |
+
 
 
 ## Building the module
