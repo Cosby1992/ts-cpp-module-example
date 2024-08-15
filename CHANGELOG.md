@@ -2,8 +2,9 @@
 
 ## [unreleased]
 - `added`: 
+    - `sub()` function in cpp
     - `sum()` function in cpp
-    - Typescript wrapper for sum function
+    - Typescript wrapper for sum, sub functions
     - Readme for the project
     - Changelog
     - LICENCE
