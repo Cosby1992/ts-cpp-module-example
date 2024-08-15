@@ -1,8 +1,38 @@
 {
   "name": "@cosby/native-basic-math",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
   "license": "MIT",
+  "files": [
+    "dist/",
+    "build/Release/basic-math.node",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cosby1992/ts-cpp-module-example"
+  },
+  "author": "Cosby",
+  "bugs": {
+    "url": "https://github.com/Cosby1992/ts-cpp-module-example/issues"
+  },  
+  "keywords": [
+    "node-addon",
+    "native-module",
+    "math",
+    "C++",
+    "typescript"
+  ],
   "scripts": {
     "build": "yarn clean && yarn build:cpp && yarn build:ts",
     "build:cjs": "tsc --project tsconfig.json",
@@ -14,7 +44,8 @@
     "gyp:clean": "node-gyp clean",
     "gyp:configure": "node-gyp configure",
     "gyp:build": "node-gyp build",
-    "gyp:rebuild": "node-gyp rebuild"
+    "gyp:rebuild": "node-gyp rebuild",
+    "prepublishOnly": "yarn build && yarn test"
   },
   "dependencies": {
     "node-addon-api": "^8.1.0"
